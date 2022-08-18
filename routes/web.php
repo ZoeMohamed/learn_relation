@@ -19,5 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/user', function () {
-    \App\Models\User::factory(3)->create();
+    $users = \App\Models\User::all();
 });
